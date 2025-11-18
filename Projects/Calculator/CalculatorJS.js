@@ -1,16 +1,20 @@
-const displayInput=document.getElementById("display");
-function appendInput(input){
-    display.value+=input;
-}
+(function(){
+    const displayInput=document.getElementById("display");
 
-function calculate(){
-    try{
-        display.value=eval(display.value);
+    window.appendInput=function(input){
+        displayInput.value+=input;
     }
-    catch(error){
-        displayInput.value="Error";
+
+    window.calculate=function(){
+        try{
+            displayInput.value=eval(displayInput.value);
+        }
+        catch(error){
+            displayInput.value="Error";
+        }
     }
-}
-function clearInput(){
-    displayInput.value="";
-}
+
+    window.clearInput=function(){
+        displayInput.value="";
+    }
+})();

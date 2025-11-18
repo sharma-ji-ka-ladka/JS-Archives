@@ -16,6 +16,10 @@ body{
     border-radius: 10px;
 }
 
+#navHead img{
+    height: 2.4vw;
+    margin-right: 1.5vh;
+}
 
 #navHead{
     margin-top: 2.5vh;
@@ -53,6 +57,10 @@ body{
     margin-left: 5%;
 }
 
+.ProjectImg{
+    height: 36px;
+    margin-left: 10px;
+}
 
 .sidebar li a {
     text-decoration: none;
