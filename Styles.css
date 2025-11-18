@@ -1,57 +1,77 @@
 body{
     display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 24vw;
+    text-align: center;
+    width: 20%;
+    background: linear-gradient(27deg,rgb(12, 13, 15), rgb(1, 39, 89));
+    border-radius: 10px;
+}
+
+
+#navHead{
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    font-size: 2.5vh;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 5px 0;
+    color: white;
 }
 
-#calculator{
-    max-width: 500px;
+#mainContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(015deg,rgb(4, 59, 133),rgb(255, 255, 255));
+    width: 96%;
+    height: 100vh;
     border-radius: 10px;
-    background-color: hsl(0, 0%, 10%);
-    overflow: hidden;
 }
 
-input{
-    margin: 5%;
-    margin-bottom: 0;
+
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
     width: 90%;
-    font-size: 4rem;
-    background-color: hsl(0, 0%, 20%);
-    border: none;
-    color: white;
+    margin-left: 5%;
 }
 
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding:25px;
-}
 
-button{
-    height: 100px;
-    width: 100px;
-    border: none;
-    border-radius: 50px;
-    background-color: hsl(0, 0%, 30%);
-    font-size: 3rem;
+.sidebar li a {
+    text-decoration: none;
+    background-color:  rgb(15, 58, 114);
+    border-radius: 25px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 3vh;
     cursor: pointer;
-}
-button:hover{
-    background-color: hsl(0, 0%, 40%);
-}
-button:active{
-    background-color: hsl(0, 0%, 50%);
+    overflow: hidden;
+    margin: 10px;
 }
 
-.op{
-    background-color: hsl(40, 100%, 54%);
-}
-
-.op:hover{
-    background-color: hsl(40, 87%, 48%);
-}
-.op:active{
-    background-color: hsl(36, 90%, 68%);
+.sidebar li a:hover {
+    transition: 0.15s;
+    background: rgb(17, 72, 143);
+    transform: scale(1.02);
 }
